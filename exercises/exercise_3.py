@@ -1,7 +1,7 @@
 # Exercise 3
 # Your solution comes here
 num = int(input("enter AN AMount of seconds"))
-hours = str(num // 3600)
+hours = str(num // 3600 % 24)
 mins = str((num % 3600) // 60)
 if int(mins) < 10:
     mins = "0" + str(mins)
